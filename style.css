@@ -1,0 +1,65 @@
+#blocPage{
+    display: grid;
+    grid-template-columns: 380px 100%;
+    grid-template-rows: 325px 439px 765px 184px;
+    max-width: 1190px;
+    color: #404040;
+    margin: auto;
+}
+.photo{
+    display: flex;
+    background-color: #feca07;
+}
+.propos, .loisirs, .contact{
+    background-color: #feca07;
+}
+img{
+    margin: auto; 
+    max-width: 200px;   
+}
+.presentation{
+    padding-top : 100px;
+}
+span{
+    color: #feca07;
+    font-weight: bold;
+}
+h1{
+    color: black;
+}
+#line{
+    width: 70px;
+    border-bottom: solid #feca07 2px;
+}
+.TitreGauche{
+    text-align: center;
+    background-color: #404040;
+    color: #feca07;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 45px;
+}
+.contact p, .propos p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.contact :nth-child(2), .propos p{
+    padding-top: 30px;
+}
+.presentation, .formation, .reco, .experience{
+    padding-left: 70px;
+}
+a{
+    text-decoration: none;
+    color: #404040;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.TitreDroite{
+    color: black;
+    border-bottom: #feca07 solid 2px;
+    max-width: 680px;
+    padding-bottom: 15px;
+}
