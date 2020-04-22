@@ -58,8 +58,17 @@ a:hover{
     text-decoration: none;
 }
 .TitreDroite{
+    display: flex;
     color: black;
     border-bottom: #feca07 solid 2px;
     max-width: 680px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
+[id*=ico_]{
+    margin-right: 25px;
+}
+section h5{
+    padding-top: 5px;
+
+}
+
