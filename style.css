@@ -71,4 +71,12 @@ section h5{
     padding-top: 5px;
 
 }
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    margin: auto;
+}
+
 
