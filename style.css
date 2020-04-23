@@ -1,25 +1,23 @@
-@font-face {font-family: "PingFang SC Regular";
-    src: url("fonts/05e476e067ffef74ca5686f229c40a63.eot"); /* IE9*/
-    src: url("fonts/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("fonts/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), /* chrome、firefox */
-    url("fonts/05e476e067ffef74ca5686f229c40a63.woff") format("woff"), /* chrome、firefox */
-    url("fonts/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("fonts/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC Regular") format("svg"); /* iOS 4.1- */
-  }
+ @font-face {font-family: "PingFang SC"; src: url("fonts/752149278afff657a3b77d75b35463fc.eot"); 
+    src: url("fonts/752149278afff657a3b77d75b35463fc.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/752149278afff657a3b77d75b35463fc.woff2") format("woff2"), 
+    url("fonts/752149278afff657a3b77d75b35463fc.woff") format("woff"), 
+    url("fonts/752149278afff657a3b77d75b35463fc.ttf") format("truetype"), 
+    url("fonts/752149278afff657a3b77d75b35463fc.svg#PingFang SC") format("svg"); 
+}
+ 
 #blocPage{
     display: grid;
-    grid-template-columns: 32% 100%;
+    grid-template-columns: 380px 1fr;
     grid-template-rows: 325px 439px 765px 184px;
-    max-width: 1190px;
     color: #404040;
-    margin: auto;
-    font-family: 'PingFang SC';
+    margin : auto;
+    font-family: "PingFang SC";
 }
 .photo{
     display: flex;
-    background-color: #feca07;
 }
-.propos, .loisirs, .contact{
+.propos, .loisirs, .contact, .photo{
     background-color: #feca07;
 }
 img{
@@ -135,20 +133,6 @@ ul i{
     margin-top: 40px;
     margin-right: 60px;
 }
-@media (max-width: 575.98px) {
-
- }
-
-/* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { ... }
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
-
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) { ... }
-
-
 
 
 
