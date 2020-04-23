@@ -32,6 +32,15 @@ h1{
     width: 70px;
     border-bottom: solid #feca07 2px;
 }
+.formation{
+    padding-top: 25px;
+}
+.experience{
+    padding-top: 80px;
+}
+.reco{
+    margin-top: -70px;
+}
 .TitreGauche{
     text-align: center;
     background-color: #404040;
@@ -88,6 +97,25 @@ footer ul{
     padding: 10px;
     text-align: center;
 }
+.formation ul{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    font-weight: bold;  
+}
+.formation li{
+    margin-left: 130px;
+    font-weight: lighter;
+        
+}
+.formation li p{
+    margin-bottom: 10px;
+}
+ul i{
+    margin-right: 15px;
+    padding-top: 8px;
+}
+
 
 
 
