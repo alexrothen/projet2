@@ -5,6 +5,7 @@
     max-width: 1190px;
     color: #404040;
     margin: auto;
+    font-family: 'PingFang SC';
 }
 .photo{
     display: flex;
@@ -38,10 +39,6 @@ h1{
     padding-top: 10px;
     padding-bottom: 5px;
     height: 45px;
-}
-.contact ul{
-    padding-left: 0;
-    list-style-type: none;
 }
 .contact ul, .propos p{
      margin: 30px 45px 0 50px;
@@ -90,7 +87,6 @@ footer ul{
     height: 60px;
     padding: 10px;
     text-align: center;
-    
 }
 
 
