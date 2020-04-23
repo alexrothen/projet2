@@ -8,14 +8,19 @@
  
 #blocPage{
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 32% 1fr;
     grid-template-rows: 325px 439px 765px 184px;
+    grid-template-areas: "photo pres"
+                        "contact formation"
+                        "propos exp"
+                        "loisirs reco";
     color: #404040;
     margin : auto;
     font-family: "PingFang SC";
 }
 .photo{
     display: flex;
+    grid-area: photo;
 }
 .propos, .loisirs, .contact, .photo{
     background-color: #feca07;
@@ -26,6 +31,7 @@ img{
 }
 .presentation{
     padding-top : 100px;
+    grid-area: pres;
 }
 span{
     color: #feca07;
@@ -40,12 +46,15 @@ h1{
 }
 .formation{
     padding-top: 25px;
+    grid-area: formation;
 }
 .experience{
     padding-top: 80px;
+    grid-area: exp;
 }
 .reco{
     margin-top: -70px;
+    grid-area: reco;
 }
 .TitreGauche{
     text-align: center;
@@ -132,6 +141,15 @@ ul i{
     width: 170px;
     margin-top: 40px;
     margin-right: 60px;
+}
+.contact{
+    grid-area: contact;
+}
+.loisirs{
+    grid-area: loisirs;
+}
+.propos{
+    grid-area: propos;
 }
 
 
