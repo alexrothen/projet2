@@ -39,13 +39,17 @@ h1{
     padding-bottom: 5px;
     height: 45px;
 }
-.contact p, .propos p{
-    padding-left: 50px;
-    padding-right: 50px;
+.contact ul{
+    padding-left: 0;
+    list-style-type: none;
 }
-.contact :nth-child(2), .propos p{
-    padding-top: 30px;
+.contact ul, .propos p{
+     margin: 30px 45px 0 50px;
 }
+.contact li{
+    margin-bottom: 15px;
+}
+
 .presentation, .formation, .reco, .experience{
     padding-left: 70px;
 }
@@ -71,22 +75,22 @@ section h5{
     padding-top: 5px;
 
 }
-ul{
+footer ul{
     display: flex;
     list-style-type: none;
     vertical-align: middle;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 35px;
     padding-right: 40px;
 }
 .circle-icon{
     border-radius: 50%;
     border: solid #404040 2px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
-    width: 70px;
-    height: 70px;
-    vertical-align: middle;
     text-align: center;
+    
 }
 
 
