@@ -1,15 +1,16 @@
- @font-face {font-family: "PingFang SC"; src: url("fonts/752149278afff657a3b77d75b35463fc.eot"); 
-    src: url("fonts/752149278afff657a3b77d75b35463fc.eot?#iefix") format("embedded-opentype"), 
-    url("fonts/752149278afff657a3b77d75b35463fc.woff2") format("woff2"), 
-    url("fonts/752149278afff657a3b77d75b35463fc.woff") format("woff"), 
-    url("fonts/752149278afff657a3b77d75b35463fc.ttf") format("truetype"), 
-    url("fonts/752149278afff657a3b77d75b35463fc.svg#PingFang SC") format("svg"); 
-}
+@import url(//db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC);
+@font-face {font-family: "PingFang SC"; 
+    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot"); 
+    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); }
  
 #blocPage{
     display: grid;
     grid-template-columns: 32% 1fr;
-    grid-template-rows: 325px 439px 765px 184px;
+    grid-template-rows: 19% 26% 45% 1fr;
     grid-template-areas: "photo pres"
                         "contact formation"
                         "propos exp"
@@ -17,6 +18,8 @@
     color: #404040;
     margin : auto;
     font-family: "PingFang SC";
+    max-height: 1684px;
+    font-size: 1rem;
 }
 .photo{
     display: flex;
@@ -49,12 +52,8 @@ h1{
     grid-area: formation;
 }
 .experience{
-    padding-top: 80px;
+    padding-top: 60px;
     grid-area: exp;
-}
-.reco{
-    margin-top: -70px;
-    grid-area: reco;
 }
 .TitreGauche{
     text-align: center;
@@ -115,8 +114,7 @@ a:hover{
 .formation li:nth-child(3), .experience li:nth-child(3){
     margin-left: 120px;
     font-weight: lighter;
-    
-        
+            
 }
 .formation li p, .experience li p{
     margin-bottom: 10px;
@@ -128,14 +126,17 @@ ul i{
 #citations{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;    
 }
-#citations blockquote{
+blockquote{
     display: block;
-    width: 170px;
+    width: 180px;
     margin-top: 40px;
     margin-right: 60px;
+}
+
+blockquote:nth-child(2){
+    margin-right: 40px;
 }
 .contact{
     grid-area: contact;
@@ -145,6 +146,10 @@ ul i{
 }
 .loisirs{
     grid-area: loisirs;
+}
+.reco{
+    grid-area: reco;
+    padding-top: -50px;
 }
 
 
