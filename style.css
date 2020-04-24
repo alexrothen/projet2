@@ -92,17 +92,11 @@ a:hover{
 [id*=ico]{
     margin-right: 25px;
 }
-section h5{
-    padding-top: 5px;
-
-}
-footer ul{
+.loisirs ul{
     display: flex;
-    list-style-type: none;
     vertical-align: middle;
     justify-content: space-evenly;
-    margin-top: 35px;
-    padding-right: 40px;
+    margin : 35px 40px 
 }
 .circle-icon{
     border-radius: 50%;
@@ -118,9 +112,10 @@ footer ul{
     flex-direction: row;
     font-weight: bold;  
 }
-.formation li, .experience li{
-    margin-left: 130px;
+.formation li:nth-child(3), .experience li:nth-child(3){
+    margin-left: 120px;
     font-weight: lighter;
+    
         
 }
 .formation li p, .experience li p{
@@ -145,11 +140,11 @@ ul i{
 .contact{
     grid-area: contact;
 }
-.loisirs{
-    grid-area: loisirs;
-}
 .propos{
     grid-area: propos;
+}
+.loisirs{
+    grid-area: loisirs;
 }
 
 
