@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,16 @@
 </head>
 <body>
 <div id="blocPage">
+    <header class="presentation">
+        <h1 class="display-4"><span>ALEX</span> ROTHENBURGER</h1>
+        <h2 class="h4">Développeur web</h2>
+        <div id="line"></div>
+    </header>
     <div class="photo">
         <img src="photos/1589918-nadine-morano-entity_default-1.png" alt="Photo de profil">
     </div>
-    <header class="presentation">
-        <h1 class="display-4"><span>ALEX</span> ROTHENBURGER</h1>
-        <p class="h4">Développeur web</p>
-        <div id="line"></div>
-    </header>
-    <aside class="contact">
-        <p class="h4 TitreGauche">CONTACT</p>
+    <section class="contact">
+        <h3 class="h4 TitreGauche">CONTACT</h3>
         <ul class="list-unstyled">
         <li>Adresse <br>
         Strasbourg, France</li>
@@ -32,16 +32,31 @@
             <a href="https://alexrothen.github.io/">https://alexrothen.github.io/</a>
         </li>
         </ul>
-    </aside>
-    <section class="formation">
+    </section>
+    <section class="propos">
+        <h3 class="h4 TitreGauche">À PROPOS DE MOI</h3>
+        <p>Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
+            Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
+            Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
+        </p>
+    </section>
+    <section class="loisirs">
+        <h3 class="h4 TitreGauche">LOISIRS</h3>
+        <ul>
+       <li><i class="fas fa-film fa-2x circle-icon" style="color: #404040;"></i></li> 
+        <li><i class="fas fa-music fa-2x circle-icon" style="color: #404040;"></i></li>
+        <li><i class="fas fa-book fa-2x circle-icon" style="color: #404040;"></i></li>
+    </ul>
+    </section>    
+     <section class="formation">
         <div class="TitreDroite">
         <i class="fas fa-user-graduate fa-2x" style="color: #feca07" id="ico_formation"></i>
-        <p class="h4">FORMATION</p>
+        <h3 class="h4">FORMATION</h3>
          </div>
          <ul class="list-unstyled">
-            <i class="fas fa-dot-circle fa-xs" style="color: #feca07;"></i>    
+           <li><i class="fas fa-dot-circle fa-xs" style="color: #feca07;"></i>    
             2016-2017 <br>
-            Paris
+            Paris</li>
             <li> 
                 <p class="h5">OPENCLASSROOMS
                 <p>Web developper</p>
@@ -51,9 +66,9 @@
             </li>
             </ul>
             <ul class="list-unstyled">
-                <i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
+                <li><i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
                 2016-2017 <br>
-                Paris
+                Paris </li>
                 <li> 
                     <p class="h5">OPENCLASSROOMS
                     <p>Web developper</p>
@@ -63,24 +78,15 @@
                 </li>
                 </ul>
     </section>
-    <aside class="propos">
-        <h5 class="h4 TitreGauche">À PROPOS DE MOI</h5>
-        <p>Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
-            Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
-            Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, Beau gosse, 
-        </p>
-
-        </p>
-     </aside>
     <section class="experience">
         <div class="TitreDroite">
             <i class="fas fa-user-tie fa-2x" style="color: #feca07;" id="ico_expe"></i>
-        <p class="h4">EXPÉRIENCE PROFESSIONELLE</p>
+        <h3 class="h4">EXPÉRIENCE PROFESSIONELLE</h3>
         </div>
         <ul class="list-unstyled">
-            <i class="fas fa-dot-circle fa-xs" style="color: #feca07;"></i>    
+            <li><i class="fas fa-dot-circle fa-xs" style="color: #feca07;"></i>    
             2016-2017 <br>
-            Paris
+            Paris</li>
             <li> 
                 <p class="h5">OPENCLASSROOMS
                 <p>Web developper</p>
@@ -90,9 +96,9 @@
             </li>
             </ul>
             <ul class="list-unstyled">
-                <i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
+                <li><i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
                 2016-2017 <br>
-                Paris
+                Paris</li>
                 <li> 
                     <p class="h5">OPENCLASSROOMS
                     <p>Web developper</p>
@@ -102,9 +108,9 @@
                 </li>
                 </ul>
                 <ul class="list-unstyled">
-                    <i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
+                    <li><i class="fas fa-circle fa-xs" style="color: #feca07;"></i>
                     2016-2017 <br>
-                    Paris
+                    Paris</li>
                     <li> 
                         <p class="h5">OPENCLASSROOMS
                         <p>Web developper</p>
@@ -114,18 +120,10 @@
                     </li>
                     </ul>
     </section>
-    <footer class="loisirs">
-        <h5 class="h4 TitreGauche">LOISIRS</h5>
-        <ul>
-       <li><i class="fas fa-film fa-2x circle-icon" style="color: #404040;"></i></li> 
-        <li><i class="fas fa-music fa-2x circle-icon" style="color: #404040;"></i></li>
-        <li><i class="fas fa-book fa-2x circle-icon" style="color: #404040;"></i></li>
-    </ul>
-    </footer>
-    <section class="reco">
+    <footer class="reco">
         <div class="TitreDroite">
             <i class="fas fa-user-edit fa-2x" style="color: #feca07;" id="ico_reco"></i>
-        <p class="h4">RECOMMANDATIONS</p>
+        <h3 class="h4">RECOMMANDATIONS</h3>
     </div>
        <div id="citations">
             <blockquote class="blockquote text-left">
@@ -141,7 +139,7 @@
             <p class="blockquote-footer">Ari, <cite>père de</cite></p>   
             </blockquote>
         </div>
-    </section>
+    </footer>
  </div>
 </body>
 </html>
