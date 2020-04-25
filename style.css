@@ -1,38 +1,84 @@
-@import url(//db.onlinewebfonts.com/c/05e476e067ffef74ca5686f229c40a63?family=PingFang+SC);
-@font-face {font-family: "PingFang SC"; 
-    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot"); 
-    src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); }
- 
-#blocPage{
+   @font-face {font-family: "PingFang SC"; 
+    src: url("/fonts/05e476e067ffef74ca5686f229c40a63.eot"); 
+    src: url("/fonts/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), 
+    url("/fonts/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), 
+    url("/fonts/05e476e067ffef74ca5686f229c40a63.woff") format("woff"), 
+    url("/fonts/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
+    url("/fonts/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); 
+}
+body{
+    margin; 0;
+    padding: 0;
+    display: flex;
+}
+main{
+    font-size: 1rem;
+    margin: auto;
+    color: #404040;
+    font-family: "PingFang SC";
     display: grid;
     grid-template-columns: 32% 1fr;
     grid-template-rows: 19% 26% 45% 1fr;
     grid-template-areas: "photo pres"
-                        "contact formation"
-                        "propos exp"
-                        "loisirs reco";
-    color: #404040;
-    margin : auto;
-    font-family: "PingFang SC";
+                    "contact formation"
+                    "propos exp"
+                    "loisirs reco";
     max-height: 1684px;
-    font-size: 1rem;
+}
+.propos, .loisirs, .contact, .photo{
+    background-color: #feca07;
+    background-repeat: repeat-y;
+}
+.TitreGauche{
+    text-align: center;
+    background-color: #404040;
+    color: #feca07;
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.contact ul, .propos p{
+    margin: 30px 45px 0 50px;
+}
+.contact li{
+   margin-bottom: 15px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: #404040;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
 }
 .photo{
     display: flex;
     grid-area: photo;
-}
-.propos, .loisirs, .contact, .photo{
-    background-color: #feca07;
+    visibility: visible;
 }
 img{
     margin: auto; 
     max-width: 200px;   
 }
-.presentation{
+.loisirs ul{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-evenly;
+    margin : 35px 40px 
+}
+.circle-icon{
+    border-radius: 50%;
+    border: solid #404040 2px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+}
+header{
     padding-top : 100px;
     grid-area: pres;
 }
@@ -55,31 +101,8 @@ h1{
     padding-top: 60px;
     grid-area: exp;
 }
-.TitreGauche{
-    text-align: center;
-    background-color: #404040;
-    color: #feca07;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    height: 45px;
-}
-.contact ul, .propos p{
-     margin: 30px 45px 0 50px;
-}
-.contact li{
-    margin-bottom: 15px;
-}
-
-.presentation, .formation, .reco, .experience{
+header, .formation, .experience, footer{
     padding-left: 70px;
-}
-a{
-    text-decoration: none;
-    color: #404040;
-}
-a:hover{
-    color: black;
-    text-decoration: none;
 }
 .TitreDroite{
     display: flex;
@@ -91,20 +114,6 @@ a:hover{
 [id*=ico]{
     margin-right: 25px;
 }
-.loisirs ul{
-    display: flex;
-    vertical-align: middle;
-    justify-content: space-evenly;
-    margin : 35px 40px 
-}
-.circle-icon{
-    border-radius: 50%;
-    border: solid #404040 2px;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    text-align: center;
-}
 .formation ul, .experience ul {
     display: flex;
     margin-top: 50px;
@@ -112,9 +121,8 @@ a:hover{
     font-weight: bold;  
 }
 .formation li:nth-child(3), .experience li:nth-child(3){
-    margin-left: 120px;
+    margin-left: 14%;
     font-weight: lighter;
-            
 }
 .formation li p, .experience li p{
     margin-bottom: 10px;
@@ -132,11 +140,14 @@ blockquote{
     display: block;
     width: 180px;
     margin-top: 40px;
-    margin-right: 60px;
+    margin-right: 5%;
 }
-
 blockquote:nth-child(2){
     margin-right: 40px;
+}
+footer{
+    grid-area: reco;
+    padding-top: -50px;
 }
 .contact{
     grid-area: contact;
@@ -147,11 +158,71 @@ blockquote:nth-child(2){
 .loisirs{
     grid-area: loisirs;
 }
-.reco{
-    grid-area: reco;
-    padding-top: -50px;
+aside{
+    grid-area: aside;
 }
-
-
+@media all and (max-width:992px){
+    main{  
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 26% 45% 1fr;
+        grid-template-areas: "pres pres"
+                             "contact formation"
+                                "propos exp"
+                                "loisirs reco"
+                                ;
+        max-height: 1684px;
+         }
+     header{
+        padding: 50px 0 45px 50px;
+        }
+    .formation, .experience, footer{
+            padding-left: 5%;
+    }
+    .photo{
+        visibility: hidden;
+    }  
+}
+@media all and (max-width:576px){
+    main{
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: "photo"
+                             "pres"
+                              "formation"
+                              "exp"
+                              "reco"
+                              "propos"
+                              "contact"
+                              "loisirs"
+                              ;
+    }
+    .contact ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+        margin: auto;       
+    }
+    header, .formation, .experience, footer{
+        padding : 5% 10% 5% 0;
+    }
+    .contact li{
+        margin-right: 5%;
+    }
+    #citations{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .photo{
+        visibility: visible;
+    }
+    .propos p, .contact ul{
+        margin: 5% 0 5% 0;
+    }
+}
 
 
