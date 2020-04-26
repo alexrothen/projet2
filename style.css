@@ -226,8 +226,11 @@ aside{
         align-content: flex-start;
         margin: auto;       
     }
-    header, .formation, .experience, footer{
+    .formation, .experience, footer{
         padding : 5% 10% 5% 5%;
+    }
+    header{
+        padding: 10% 0 10% 5%;    
     }
     #blockdev{
         position: relative;
@@ -250,6 +253,7 @@ aside{
     }
     .photo{
         visibility: visible;
+        padding: 5%;
     }
     blockquote, .propos p, .contact ul{
         margin: 5% 0 5% 5%;
