@@ -137,7 +137,6 @@ ul i{
     justify-content: flex-start;    
 }
 blockquote{
-    display: block;
     width: 180px;
     margin-top: 40px;
     margin-right: 5%;
@@ -207,7 +206,7 @@ aside{
         margin: auto;       
     }
     header, .formation, .experience, footer{
-        padding : 5% 10% 5% 0;
+        padding : 5% 10% 5% 5%;
     }
     .contact li{
         margin-right: 5%;
@@ -220,8 +219,8 @@ aside{
     .photo{
         visibility: visible;
     }
-    .propos p, .contact ul{
-        margin: 5% 0 5% 0;
+    blockquote, .propos p, .contact ul{
+        margin: 5% 0 5% 5%;
     }
 }
 
