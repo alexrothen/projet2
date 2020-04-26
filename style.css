@@ -25,6 +25,25 @@ main{
                     "loisirs reco";
     max-height: 1684px;
 }
+header{
+    padding-top : 100px;
+    grid-area: pres;
+}
+span{
+    color: #feca07;
+    font-weight: bold;
+}
+h1{
+    color: black;
+}
+h2{
+    text-align: left;
+}
+#line{
+     width: 70px;
+     border-top: solid 2px;
+     color: #feca07;
+}
 .propos, .loisirs, .contact, .photo{
     background-color: #feca07;
     background-repeat: repeat-y;
@@ -77,21 +96,6 @@ img{
     height: 60px;
     padding: 10px;
     text-align: center;
-}
-header{
-    padding-top : 100px;
-    grid-area: pres;
-}
-span{
-    color: #feca07;
-    font-weight: bold;
-}
-h1{
-    color: black;
-}
-#line{
-    width: 70px;
-    border-bottom: solid #feca07 2px;
 }
 .formation{
     padding-top: 25px;
@@ -161,7 +165,8 @@ aside{
     grid-area: aside;
 }
 @media all and (max-width:992px){
-    main{  
+    main{ 
+        width: auto; 
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 26% 45% 1fr;
@@ -171,16 +176,32 @@ aside{
                                 "loisirs reco"
                                 ;
         max-height: 1684px;
-         }
+         }  
      header{
-        padding: 50px 0 45px 50px;
-        }
+        padding: 50px 0 50px 150px;
+        max-width: fit-content;
+        } 
+    #blockdev{
+        position: relative;
+    }
+    #line{
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+    }  
+     h2{
+         text-align: right;
+     }   
     .formation, .experience, footer{
             padding-left: 5%;
     }
+    .TitreDroite{
+        max-width: 500px;
+    }
     .photo{
         visibility: hidden;
-    }  
+    }
+
 }
 @media all and (max-width:576px){
     main{
@@ -207,6 +228,17 @@ aside{
     }
     header, .formation, .experience, footer{
         padding : 5% 10% 5% 5%;
+    }
+    #blockdev{
+        position: relative;
+    }
+    #line{
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
+    h2{
+        text-align: left;
     }
     .contact li{
         margin-right: 5%;
