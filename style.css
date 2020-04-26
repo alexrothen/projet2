@@ -24,6 +24,7 @@ main{
                     "propos exp"
                     "loisirs reco";
     max-height: 1684px;
+    max-width: fit-content;
 }
 header{
     padding-top : 100px;
@@ -177,10 +178,10 @@ aside{
                                 ;
         max-height: 1684px;
          }  
-     header{
+    header{
         padding: 50px 0 50px 150px;
         max-width: fit-content;
-        } 
+    }   
     #blockdev{
         position: relative;
     }
