@@ -6,11 +6,6 @@
     url("/fonts/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
     url("/fonts/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); 
 }
-body{
-    margin; 0;
-    padding: 0;
-    display: flex;
-}
 main{
     font-size: 1rem;
     margin: auto;
@@ -163,7 +158,9 @@ footer{
     grid-area: loisirs;
 }
 aside{
-    grid-area: aside;
+    padding: 0;
+    margin: 0;
+    display: block !important;
 }
 @media all and (max-width:992px){
     main{ 
