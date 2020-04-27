@@ -6,6 +6,10 @@
     url("/fonts/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
     url("/fonts/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); 
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 main{
     font-size: 1rem;
     margin: auto;
@@ -98,7 +102,7 @@ a:hover{
     grid-area: formation;
 }
 .experience{
-    padding-top: 60px;
+    padding-top: 40px;
     grid-area: exp;
 }
 header, .formation, .experience, footer{
@@ -111,14 +115,14 @@ header, .formation, .experience, footer{
     max-width: 680px;
     padding-bottom: 5px;
 }
-[id*=ico]{
-    margin-right: 25px;
-}
 .formation ul, .experience ul {
     display: flex;
     margin-top: 50px;
     flex-direction: row;
     font-weight: bold;  
+}
+[id*=ico]{
+    margin-right: 25px;
 }
 .formation li:nth-child(3), .experience li:nth-child(3){
     margin-left: 14%;
@@ -146,7 +150,7 @@ blockquote:nth-child(2){
 }
 footer{
     grid-area: reco;
-    padding-top: -50px;
+    padding-top: -40px;
 }
 .contact{
     grid-area: contact;
@@ -157,11 +161,11 @@ footer{
 .loisirs{
     grid-area: loisirs;
 }
-aside{
+/* aside{
     padding: 0;
     margin: 0;
     display: block !important;
-}
+} */
 @media all and (max-width:992px){
     main{ 
         width: auto; 
@@ -192,9 +196,11 @@ aside{
      }   
     .formation, .experience, footer{
         padding-left: 5%;
+        max-width: 550px;
     }
-    .TitreDroite{
-        max-width: 500px;
+    .formation li:nth-child(3), .experience li:nth-child(3){
+        margin-left: 10%;
+        font-weight: lighter;
     }
     .photo{
         visibility: hidden;
@@ -217,6 +223,9 @@ aside{
                               "loisirs"
                               ;
     }
+    header{
+        padding: 10% 0 10% 5%;    
+    }
     .contact ul{
         display: flex;
         align-items: center;
@@ -226,9 +235,6 @@ aside{
     }
     .formation, .experience, footer{
         padding : 5% 10% 5% 5%;
-    }
-    header{
-        padding: 10% 0 10% 5%;    
     }
     #blockdev{
         position: relative;
