@@ -229,9 +229,7 @@ footer{
     .contact ul{
         display: flex;
         align-items: baseline;
-        justify-content: center;
-        align-content: flex-start;
-        margin: auto;       
+        justify-content: center;     
     }
     .formation, .experience, footer{
         padding : 5% 10% 5% 5%;
