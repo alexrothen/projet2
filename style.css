@@ -251,7 +251,6 @@ footer{
     #citations{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .photo{
@@ -260,9 +259,6 @@ footer{
     }
     blockquote, .propos p, .contact ul{
         margin: 5% 0 5% 5%;
-    }
-    blockquote{
-        width: 100px;
     }
 }
 
