@@ -1,10 +1,10 @@
    @font-face {font-family: "PingFang SC"; 
-    src: url("05e476e067ffef74ca5686f229c40a63.eot"); 
-    src: url("05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), 
-    url("05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), 
-    url("05e476e067ffef74ca5686f229c40a63.woff") format("woff"), 
-    url("05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
-    url("05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); 
+    src: url("/05e476e067ffef74ca5686f229c40a63.eot"); 
+    src: url("/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"), 
+    url("/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"), 
+    url("/05e476e067ffef74ca5686f229c40a63.woff") format("woff"), 
+    url("/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"), 
+    url("/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg"); 
 }
 body{
     margin: 0;
