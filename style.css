@@ -261,5 +261,8 @@ footer{
     blockquote, .propos p, .contact ul{
         margin: 5% 0 5% 5%;
     }
+    blockquote{
+        width: 100px;
+    }
 }
 
