@@ -241,7 +241,7 @@ footer{
     #line{
         position: absolute;
         left: 0;
-        bottom: -5px;
+        bottom: -10px;
     }
     h2{
         text-align: left;
