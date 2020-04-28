@@ -239,12 +239,14 @@ footer{
     header{
         padding: 0;
         justify-content: flex-start;
+        position: relative;
     }
     #line{
+        position: absolute;
         left: 0;
         bottom: 0;                 
     }
-    .formation, .experience, footer, header, footer{
+    .formation, .experience, footer, header{
         margin: 8% 5% 5% 5%;
         width: auto;   
     }
