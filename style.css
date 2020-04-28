@@ -56,6 +56,9 @@ img{
     margin: auto; 
     max-width: 200px;   
 }
+aside{
+    display: contents;
+}
 .propos, .loisirs, .contact, .photo{
     background-color: #feca07;
     background-repeat: repeat-y;
