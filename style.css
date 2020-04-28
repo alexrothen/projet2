@@ -12,18 +12,20 @@ main{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     display: grid;
-    grid-template-columns: 32% 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 19% 26% 45% 1fr;
     grid-template-areas: "photo pres"
                     "contact formation"
                     "propos exp"
                     "loisirs reco";
-    max-height: 1684px;
-    max-width: 1190px;
+    height: 1684px;
 }
 header{
     padding-top : 100px;
     grid-area: pres;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 span{
     color: #feca07;
@@ -107,13 +109,14 @@ a:hover{
 .formation{
     padding-top: 25px;
     grid-area: formation;
+  
 }
 .experience{
     padding-top: 40px;
     grid-area: exp;
 }
 header, .formation, .experience, footer{
-    padding-left: 70px;
+    margin-left: 70px;
 }
 .TitreDroite{
     display: flex;
@@ -158,6 +161,7 @@ blockquote:nth-child(2){
 footer{
     grid-area: reco;
     padding-top: -40px;
+    z-index: 1000;
 }
 .contact{
     grid-area: contact;
@@ -184,30 +188,31 @@ footer{
                                 "propos exp"
                                 "loisirs reco"
                                 ;
-        max-height: 1684px;
          }  
     header{
-        padding: 50px 0 50px 90px;
-        max-width: fit-content;
+        margin: 50px auto 50px auto;
+        padding: 0;
+        justify-content: flex-end; 
+        position: relative;   
     }   
-    #blockdev{
-        position: relative;
-    }
     #line{
         position: absolute;
         right: 0;
-        bottom: -5px;
+        bottom: 0;
     }  
      h2{
          text-align: right;
      }
      aside{
          width: auto;
+    }
+    .propos, .contact, .loisirs{
+         position: sticky;
+         top: 0;
      }
-
-    .formation, .experience, footer{
-        padding-left: 5%;
-        max-width: 550px;
+   
+  .formation, .experience, footer{
+        max-width: 500px;
     }
     .formation li:nth-child(3), .experience li:nth-child(3){
         margin-left: 10%;
@@ -234,21 +239,23 @@ footer{
                               ;
     }
     header{
-        padding: 10% 0 10% 5%;      
-    }
-    .formation, .experience, footer{
-        padding : 5% 10% 5% 5%;
+        padding: 0;
+        justify-content: flex-start;
     }
     #line{
-        position: absolute;
         left: 0;
-        bottom: -15px;
+        bottom: 0;                 
+    }
+    .formation, .experience, footer, header, footer{
+        margin: 8% 5% 5% 5%;
+        width: auto;   
     }
     h2{
         text-align: left;
     }
     .propos, .loisirs, .contact, .photo{
         width: auto;
+        
     }
     .contact ul{
         margin: auto;
