@@ -60,8 +60,10 @@ aside{
     display: contents;
 }
 .propos, .loisirs, .contact, .photo{
+    display: flex;
+    flex-direction: column;
     background-color: #feca07;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
 }
 .TitreGauche{
     text-align: center;
@@ -71,13 +73,9 @@ aside{
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.contact, .propos{
-    display: flex;
-    flex-direction: column;
-}
 .contact ul, .propos p{
-    margin: auto;
     flex: auto;
+    margin: auto;
     padding: 5%;
     text-align: justify;
 }
@@ -246,9 +244,6 @@ footer{
     }
     .formation, .experience, footer{
         padding : 5% 10% 5% 5%;
-    }
-    #blockdev{
-        position: relative;
     }
     #line{
         position: absolute;
