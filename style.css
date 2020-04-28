@@ -172,11 +172,6 @@ footer{
 .loisirs{
     grid-area: loisirs;
 }
-/* aside{
-    padding: 0;
-    margin: 0;
-    display: block !important;
-} */
 @media all and (max-width:992px){
     main{ 
         width: auto; 
@@ -209,7 +204,7 @@ footer{
     .propos, .contact, .loisirs{
          position: sticky;
          top: 0;
-     }
+    }
    
   .formation, .experience, footer{
         max-width: 500px;
