@@ -71,8 +71,15 @@ aside{
     padding-top: 10px;
     padding-bottom: 5px;
 }
+.contact, .propos{
+    display: flex;
+    flex-direction: column;
+}
 .contact ul, .propos p{
-    margin: 30px 45px 0 50px;
+    margin: auto;
+    flex: auto;
+    padding: 5%;
+    text-align: justify;
 }
 .contact li{
    margin-bottom: 15px;
@@ -232,7 +239,7 @@ footer{
     header{
         padding: 10% 0 10% 5%;    
     }
-    .contact ul{
+    .contact ul, .propos p{
         display: flex;
         align-items: baseline;
         justify-content: center;        
@@ -263,8 +270,10 @@ footer{
         visibility: visible;
         padding: 5%;
     }
-    blockquote, .propos p, .contact ul{
-        margin: 5% 0 5% 5%;
+    .propos p, .contact ul{
+        margin: auto;
+        flex: auto;
+        padding: 5%;
     }
 }
 
