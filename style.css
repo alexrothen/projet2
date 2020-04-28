@@ -204,9 +204,10 @@ footer{
     .propos, .contact, .loisirs{
          position: sticky;
          top: 0;
+         width: auto;
     }
    
-  .formation, .experience, footer{
+    .formation, .experience, footer{
         max-width: 500px;
     }
     .formation li:nth-child(3), .experience li:nth-child(3){
