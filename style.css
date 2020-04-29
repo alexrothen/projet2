@@ -20,11 +20,8 @@ main{
     height: 1684px;
 }
 header{
-    padding-top : 100px;
+    margin: auto;
     grid-area: pres;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 span{
     color: #feca07;
@@ -173,11 +170,7 @@ footer{
 }
 @media all and (max-width:992px){
     main{ 
-        margin: auto;
-        width: auto; 
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 26% 45% 1fr;
+        grid-template-rows: 1fr 2fr 3fr 1fr;
         grid-template-areas: "pres pres"
                              "contact formation"
                                 "propos exp"
@@ -185,9 +178,7 @@ footer{
                                 ;
          }  
     header{
-        margin: 50px auto 50px auto;
-        padding: 0;
-        justify-content: flex-end; 
+        margin: auto;
         position: relative;   
     }   
     #line{
@@ -220,10 +211,6 @@ footer{
 }
 @media all and (max-width:576px){
     main{
-        margin: auto;
-        width: auto;
-        display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(8,1fr);
         grid-template-areas: "photo"
                              "pres"
@@ -235,19 +222,12 @@ footer{
                               "contact"
                               ;
     }
-    header{
-        padding: 0;
-        justify-content: flex-start;
-        position: relative;
-    }
     #line{
-        position: absolute;
         left: 0;
-        bottom: 0;                 
     }
     .formation, .experience, footer, header{
         margin: 8% 5% 5% 5%;
-        width: auto;   
+        width: auto;
     }
     h2{
         text-align: left;
