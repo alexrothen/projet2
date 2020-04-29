@@ -257,5 +257,8 @@ footer{
         padding: 5%;
         display: flex;
     }
+    a{
+        word-break: normal;
+    }
 }
 
