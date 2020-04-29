@@ -258,7 +258,7 @@ footer{
         display: flex;
     }
     a{
-        word-break: normal;
+        word-break: keep-all;
         overflow: visible;
     }
 }
