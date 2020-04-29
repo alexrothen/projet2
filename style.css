@@ -214,9 +214,9 @@ footer{
         margin-left: 10%;
     }
     .photo{
+        display: none;
         visibility: hidden;
     }
-
 }
 @media all and (max-width:576px){
     main{
@@ -271,6 +271,7 @@ footer{
     .photo{
         visibility: visible;
         padding: 5%;
+        display: flex;
     }
   
 }
