@@ -240,8 +240,7 @@ footer{
         text-align: left;
     }
     .propos, .loisirs, .contact, .photo{
-        width: auto;
-        
+        width: auto;  
     }
     .contact ul{
         margin: auto;
@@ -260,6 +259,5 @@ footer{
         padding: 5%;
         display: flex;
     }
-  
 }
 
