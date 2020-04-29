@@ -151,7 +151,7 @@ ul i{
 #citations{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;    
+    justify-content: flex-start;
 }
 blockquote{
     width: 180px;
@@ -250,9 +250,7 @@ footer{
        margin-bottom: 15px;
     }
     #citations{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        margin-left: 5%;
     }
     .photo{
         visibility: visible;
