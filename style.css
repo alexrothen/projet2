@@ -261,11 +261,5 @@ footer{
     a{
         overflow: visible;
     }
-    .TitreDroite{
-        width: 100%;
-    }
-    [id*=ico]{
-        margin-right: 1%;
-    }
 }
 
