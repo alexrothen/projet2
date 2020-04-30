@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
