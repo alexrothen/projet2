@@ -8,7 +8,8 @@ body{
 main{
     font-size: 1rem;
     margin: auto;
-    width: auto;
+    width: 100vw;
+    overflow: hidden;
     color: #263238;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -197,13 +198,8 @@ footer{
      h2{
          text-align: right;
      }
-     aside{
-         width: auto;
-    }
     .propos, .contact, .loisirs{
-         position: sticky;
-         top: 0;
-         width: auto;
+         width: 100%;
     }
    
     .formation, .experience, footer{
@@ -234,14 +230,18 @@ footer{
         left: 0;
     }
     .formation, .experience, footer, header{
-        margin: 8% 5% 5% 5%;
-        width: auto;
+        padding : 8% 5% 5% 5%;
+        margin: 0;
+        width: 100%;
     }
     h2{
         text-align: left;
     }
+    aside{
+        width: 100vw;
+    }
     .propos, .loisirs, .contact, .photo{
-        width: auto;  
+        width: 100%;  
     }
     .contact ul{
         margin: auto;
