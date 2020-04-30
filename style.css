@@ -200,13 +200,10 @@ footer{
      }
     .propos, .contact, .loisirs{
          width: 100%;
-<<<<<<< HEAD
     }
     .formation, .experience, footer{
         max-width: 500px;
         padding-right: 5%;
-=======
->>>>>>> 7b1069e5579146caad90d8b8fb5e40da19774e9f
     }
     .formation li:nth-child(3), .experience li:nth-child(3){
         margin-left: 10%;
@@ -232,13 +229,9 @@ footer{
                               ;
     }
     .formation, .experience, footer, header{
-<<<<<<< HEAD
         width: 100vw;
         padding : 8% 5% 5% 5%;
         margin: 0;
-=======
-        width: 100%;
->>>>>>> 7b1069e5579146caad90d8b8fb5e40da19774e9f
     }
     #line{
         position: relative;
@@ -250,11 +243,7 @@ footer{
         text-align: left;
     }
     .propos, .loisirs, .contact, .photo{
-<<<<<<< HEAD
         width: 100vw; 
-=======
-        width: 100%;  
->>>>>>> 7b1069e5579146caad90d8b8fb5e40da19774e9f
     }
     .contact ul{
         margin: auto;
