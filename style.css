@@ -204,10 +204,6 @@ footer{
     .propos, .contact, .loisirs{
          width: 100%;
     }
-   
-    .formation, .experience, footer{
-        max-width: 500px;
-    }
     .formation li:nth-child(3), .experience li:nth-child(3){
         margin-left: 10%;
     }
@@ -218,6 +214,7 @@ footer{
 }
 @media all and (max-width:576px){
     main{
+        width: 100%;
         grid-template-rows: repeat(8,1fr);
         grid-template-areas: "photo"
                              "pres"
@@ -233,7 +230,6 @@ footer{
         left: 0;
     }
     .formation, .experience, footer, header{
-        margin: 8% 5% 5% 5%;
         width: 100%;
     }
     h2{
@@ -259,6 +255,16 @@ footer{
     }
     a{
         overflow: visible;
+    }
+    .TitreDroite{
+        width: 100%;
+    }
+    [id*=ico]{
+        margin-right: 0;
+    }
+    header, .formation, .experience, footer{
+        margin-left: 0;
+        padding : 5% auto 5% 5%;
     }
 }
 
