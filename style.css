@@ -9,7 +9,7 @@ main{
     font-size: 1rem;
     margin: auto;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     color: #263238;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -20,7 +20,7 @@ main{
                     "contact formation"
                     "propos exp"
                     "loisirs reco";
-    height: 1684px;
+    height: 1684px;                
 }
 header{
     margin: auto;
@@ -166,7 +166,6 @@ blockquote:nth-child(2){
 footer{
     grid-area: reco;
     padding-top: -40px;
-    z-index: 1000;
 }
 .contact{
     grid-area: contact;
@@ -201,9 +200,9 @@ footer{
     .propos, .contact, .loisirs{
          width: 100%;
     }
-   
     .formation, .experience, footer{
         max-width: 500px;
+        padding-right: 5%;
     }
     .formation li:nth-child(3), .experience li:nth-child(3){
         margin-left: 10%;
@@ -226,22 +225,22 @@ footer{
                               "contact"
                               ;
     }
-    #line{
-        left: 0;
-    }
     .formation, .experience, footer, header{
+        width: 100vw;
         padding : 8% 5% 5% 5%;
         margin: 0;
-        width: 100%;
     }
+    #line{
+        position: relative;
+     }
+    .display-4{
+        font-size: 2.7rem;
+    } 
     h2{
         text-align: left;
     }
-    aside{
-        width: 100vw;
-    }
     .propos, .loisirs, .contact, .photo{
-        width: 100%;  
+        width: 100vw; 
     }
     .contact ul{
         margin: auto;
