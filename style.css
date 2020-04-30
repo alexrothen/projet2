@@ -119,7 +119,7 @@ a:hover{
     grid-area: exp;
 }
 header, .formation, .experience, footer{
-    margin-left: 70px;
+    margin-left: 10%;
 }
 .TitreDroite{
     display: flex;
@@ -144,6 +144,9 @@ header, .formation, .experience, footer{
     margin-left: 14%;
     font-weight: 300;
 }
+.formation li:nth-child(2), .experience li:nth-child(2){
+    min-width: 80px;
+}
 .formation li p, .experience li p{
     margin-bottom: 10px;
 }
@@ -154,15 +157,16 @@ ul i{
 #citations{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+ 
 }
 blockquote{
-    width: 180px;
+    width: 35%;
     margin-top: 40px;
     margin-right: 5%;
 }
-blockquote:nth-child(2){
-    margin-right: 40px;
+blockquote:nth-child(1){
+    flex-grow: 2;
 }
 footer{
     grid-area: reco;
@@ -179,7 +183,7 @@ footer{
 }
 @media all and (max-width:992px){
     main{ 
-        grid-template-rows: 1fr 2fr 3fr 1fr;
+        grid-template-rows: 14% 2fr 3fr 1fr;
         grid-template-areas: "pres pres"
                              "contact formation"
                                 "propos exp"
@@ -212,6 +216,24 @@ footer{
         display: none;
         visibility: hidden;
     }
+    #citations{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: center;
+        margin: auto;
+    }
+    .loisirs h3{
+        margin-bottom: 10%;
+    }
+    blockquote{
+        margin-top: 0;
+        margin-right: 10%;
+    }
+    blockquote:nth-child(1), blockquote:nth-child(2){
+        margin-top: 5%;
+    }
+
 }
 @media all and (max-width:576px){
     main{
@@ -228,7 +250,7 @@ footer{
     }
     .formation, .experience, footer, header{
         width: 100vw;
-        padding : 8% 5% 5% 5%;
+        padding : 8% 0 5% 5%;
         margin: 0;
     }
     #line{
@@ -251,13 +273,27 @@ footer{
        margin-bottom: 15px;
     }
     #citations{
-        margin-left: 5%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: center;
     }
     .photo{
         visibility: visible;
         padding: 5%;
         display: flex;
     }
+    blockquote{
+        margin : 5% 5% 0 5%;
+    }
+    .loisirs h3{
+        margin-bottom: 0;
+    }
+    .loisirs ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin : 5% 0 5% 0;
+    }    
     a{
         overflow: visible;
     }
