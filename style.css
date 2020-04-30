@@ -202,9 +202,7 @@ footer{
          width: auto;
     }
     .propos, .contact, .loisirs{
-         position: sticky;
-         top: 0;
-         width: auto;
+         width: 100%;
     }
    
     .formation, .experience, footer{
@@ -236,13 +234,13 @@ footer{
     }
     .formation, .experience, footer, header{
         margin: 8% 5% 5% 5%;
-        width: auto;
+        width: 100%;
     }
     h2{
         text-align: left;
     }
     .propos, .loisirs, .contact, .photo{
-        width: auto;  
+        width: 100%;  
     }
     .contact ul{
         margin: auto;
