@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     background-color: #FAFAFA;
 }
 main{
@@ -55,7 +56,7 @@ aside{
 .propos, .loisirs, .contact, .photo{
     display: flex;
     flex-direction: column;
-    background-color: #EEEEEE;
+    background-color:#E0E0E0;
     width: 380px;
 }
 .TitreGauche{
@@ -90,8 +91,8 @@ a{
     word-break: break-all;
 }
 a:hover{
-    color: #880E4F;
     text-decoration: none;
+    color: #880E4F;
 }
 .loisirs ul{
     display: flex;
