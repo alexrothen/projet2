@@ -215,8 +215,6 @@ footer{
 }
 @media all and (max-width:576px){
     main{
-        width: 100%;
-        margin: auto;
         grid-template-rows: repeat(8,1fr);
         grid-template-areas: "photo"
                              "pres"
@@ -267,11 +265,7 @@ footer{
         width: 100%;
     }
     [id*=ico]{
-        margin-right: 0;
-    }
-    header, .formation, .experience, footer{
-        margin-left: 0;
-        padding : 5% auto 5% 5%;
+        margin-right: 1%;
     }
 }
 
