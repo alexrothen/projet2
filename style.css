@@ -26,6 +26,7 @@ main{
 header{
     margin: auto;
     grid-area: pres;
+    padding-right: 2%;
 }
 span{
     font-weight: 700;
@@ -123,7 +124,7 @@ a:hover{
     grid-area: exp;
 }
 header, .formation, .experience, footer{
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .TitreDroite{
     display: flex;
@@ -150,12 +151,10 @@ li .h5{
 }
 .detail{
     margin-left: 14%;
-    /* flex: 2; */
 }
 .dateVille{
     width: 100px;
     font-weight: 700;
-    /* flex: 1 0 30%; */
 }
 .formation li p, .experience li p{
     margin-bottom: 10px;
