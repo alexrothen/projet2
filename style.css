@@ -142,6 +142,9 @@ header, .formation, .experience, footer{
     margin-top: 50px;
     align-items: flex-start; 
 }
+li .h5{
+    margin-bottom: 2%;
+}
 [id*=ico]{
     margin-right: 25px;
 }
@@ -293,7 +296,7 @@ footer{
         margin: 5%;
     }
     blockquote{
-        margin : 4% 4% 0 4%;
+        margin : auto;
     }
     li .h5, .mb-0{
         font-size: 1.05rem;
@@ -314,8 +317,8 @@ footer{
     }
     #citations{
         flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 5%;
+        padding: 0 5% 0 5%;
+        align-content: flex-end;
     } 
 }
 
