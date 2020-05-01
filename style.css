@@ -171,10 +171,13 @@ li .h5{
     max-width: 680px;
     align-items: baseline;
     align-content: flex-start;
+    flex-wrap: nowrap;
 }
 blockquote{
     margin-top: 5%;
     margin-right: 5%;
+    flex: 1;
+    align-items: center;
 }
 footer{
     grid-area: reco;
@@ -214,6 +217,10 @@ footer{
          min-width: 220px;
          width: auto;
     }
+    .loisirs ul{
+        padding-bottom: 20%; 
+        margin: 0;
+    }
     .formation, .experience, footer{
         padding-right: 5%;
         margin-bottom: 0;
@@ -225,24 +232,20 @@ footer{
         display: none;
         visibility: hidden;
     }
-    .loisirs ul{
-        margin-bottom: 50%;
-    }
-
     .loisirs h3{
         margin-bottom: 10%;
     }
     #citations{
         flex-wrap: wrap;
     }
-    blockquote:nth-child(1), blockquote:nth-child(2){
-        margin-top: 5%;
+    blockquote, .blockquote-footer{
+        flex: auto; 
         margin-bottom: 0;
+        padding-bottom: 0;    
     }
     footer{
         padding-top: -5%;
     }
-
 }
 @media all and (max-width:576px){
     main{
@@ -264,8 +267,8 @@ footer{
         margin: 0;
     }
     header{
-        margin: auto;
-        padding: 8% 2% 8% 2%;
+        margin: 0;
+        padding: 8% 2% 8% 5%;
     }
     #line{
         position: relative;
@@ -293,13 +296,14 @@ footer{
         display: flex;
     }
     .loisirs ul{
-        margin: 5%;
+        margin: 0;
+        padding: 8%;
     }
     blockquote{
         margin : auto;
     }
     li .h5, .mb-0{
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         margin-bottom: 2%;
     }
     .h4{
@@ -308,17 +312,23 @@ footer{
     }
     .loisirs h3{
         margin-bottom: 0;
-    }  
-    a{
-        overflow: visible;
     }
+    .dateVille{
+        flex: 1;
+    }  
     .detail{
         margin-left: 8%;
+        flex: 2;
     }
     #citations{
         flex-wrap: wrap;
-        padding: 0 5% 0 5%;
-        align-content: flex-end;
-    } 
+        padding: 5% 0 0 10%;
+    }
+    blockquote{
+        flex: auto;
+    }
+    .blockquote-footer{
+        margin-bottom: 1rem;
+    }    
 }
 
