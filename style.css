@@ -150,11 +150,12 @@ li .h5{
     margin-right: 25px;
 }
 .detail{
-    margin-left: 14%;
+    flex: 0.2 2 300px;
+    margin-left: 8%;
 }
 .dateVille{
-    width: 100px;
     font-weight: 700;
+    flex: 0 1 100px;
 }
 .formation li p, .experience li p{
     margin-bottom: 10px;
@@ -202,6 +203,7 @@ footer{
          }  
     header{
         margin: auto;
+        padding: 0;
         position: relative;   
     }   
     #line{
@@ -274,7 +276,7 @@ footer{
         width: 60px;
     }
     .display-4{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     } 
     h2{
         text-align: left;
@@ -312,16 +314,9 @@ footer{
     .loisirs h3{
         margin-bottom: 0;
     }
-    .dateVille{
-        flex: 1;
-    }  
-    .detail{
-        margin-left: 6%;
-        flex: 2;
-    }
     #citations{
         flex-wrap: wrap;
-        padding: 5% 0 0 10%;
+        padding: 5% 0 0 5%;
     }
     blockquote{
         flex: auto;
