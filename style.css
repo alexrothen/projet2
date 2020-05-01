@@ -317,7 +317,7 @@ footer{
         flex: 1;
     }  
     .detail{
-        margin-left: 8%;
+        margin-left: 6%;
         flex: 2;
     }
     #citations{
@@ -326,6 +326,9 @@ footer{
     }
     blockquote{
         flex: auto;
+    }
+    blockquote:nth-child(1){
+        flex-grow: 2;
     }
     .blockquote-footer{
         margin-bottom: 1rem;
