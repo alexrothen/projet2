@@ -291,13 +291,13 @@ footer{
     }
     .loisirs ul{
         margin: 5%;
-        align-items: center;
     }
     blockquote{
         margin : 4% 4% 0 4%;
     }
     li .h5, .mb-0{
         font-size: 1.05rem;
+        margin-bottom: 2%;
     }
     .h4{
         font-size: 1.35rem;
@@ -314,7 +314,7 @@ footer{
     }
     #citations{
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         padding-left: 5%;
     } 
 }
