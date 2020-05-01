@@ -147,10 +147,12 @@ header, .formation, .experience, footer{
 }
 .detail{
     margin-left: 14%;
+    flex: 2;
 }
 .dateVille{
-    width: 100px;
+    /* width: 100px; */
     font-weight: 700;
+    flex: 1 0 30%;
 }
 .formation li p, .experience li p{
     margin-bottom: 10px;
