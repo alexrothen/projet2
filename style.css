@@ -252,6 +252,7 @@ footer{
     main{
         width: 100vw;
         grid-template-rows: repeat(8,1fr);
+        grid-template-columns: 1fr;
         grid-template-areas: "photo"
                              "pres"
                               "formation"
@@ -317,7 +318,6 @@ footer{
     #citations{
         flex-wrap: wrap;
         padding: 5% 0 0 5%;
-        justify-content: center;
     }
     blockquote{
         flex: auto;
