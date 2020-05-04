@@ -195,9 +195,9 @@ footer{
         margin: auto;
         grid-template-rows: 14% 2fr 4fr 1fr;;
         grid-template-areas: "pres pres"
-                             "contact formation"
-                                "propos exp"
-                                "loisirs reco"
+                            "contact formation"
+                            "propos exp"
+                            "loisirs reco"
                                 ;
          }  
     header{
@@ -247,7 +247,7 @@ footer{
 @media all and (max-width:576px){
     main{
         width: 100vw;
-        height: 100vh;
+        max-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr) 2fr 4fr repeat(4,1fr);
         grid-template-areas: "photo"
