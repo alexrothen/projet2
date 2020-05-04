@@ -247,7 +247,7 @@ footer{
 @media all and (max-width:576px){
     main{
         width: 100vw;
-        height: 3000px;
+        height: 2000px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr) 2fr 4fr repeat(4,1fr);
         grid-template-areas: "photo"
