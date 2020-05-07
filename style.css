@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 
-body{
+body {
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
 }
-main{
+
+main {
     font-size: 1rem;
     margin: auto;
     overflow-x: hidden;
@@ -17,54 +18,70 @@ main{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 19% 2fr 4fr 1fr;
     grid-template-areas: "photo pres"
-                         "contact formation"
-                         "propos exp"
-                         "loisirs reco";                             
+        "contact formation"
+        "propos exp"
+        "loisirs reco";
 }
-header{
+
+header {
     margin: auto;
     grid-area: pres;
 }
-span{
+
+span {
     font-weight: 700;
 }
-span, #line{
+
+span,
+#line {
     color: #880E4F;
 }
-h1{
+
+h1 {
     color: black;
     width: fit-content;
 }
-h2{
+
+h2 {
     text-align: left;
 }
-#line{
-     width: 70px;
-     border-top: solid 2px;
+
+#line {
+    width: 70px;
+    border-top: solid 2px;
 }
-.photo{
+
+.photo {
     display: flex;
     grid-area: photo;
     visibility: visible;
 }
-.photo a{
+
+.photo a {
     display: block;
     margin: auto;
 }
-img{
-    max-width: 200px;  
-} 
-aside{
+
+img {
+    max-width: 200px;
+}
+
+aside {
     display: contents;
 }
-.propos, .loisirs, .contact, .photo{
+
+.propos,
+.loisirs,
+.contact,
+.photo {
     display: flex;
     flex-direction: column;
-    background-color:#E0E0E0;
+    background-color: #E0E0E0;
     width: 380px;
-    
+
 }
-.TitreGauche{
+
+.TitreGauche {
     text-align: center;
     background-color: #263238;
     color: #F5F5F5;
@@ -72,38 +89,45 @@ aside{
     padding-top: 10px;
     padding-bottom: 5px;
     font-weight: 700;
-   
+
 }
-.propos p{
+
+.propos p {
     flex: auto;
     margin: auto;
     padding: 5% 10% 5% 10%;
     text-align: justify;
 }
-#blocContact{
+
+#blocContact {
     padding: 5% 10% 5% 10%;
 }
-.contact a{
+
+.contact a {
     display: block;
     text-decoration: none;
     color: #404040;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.contact a:hover{
+
+.contact a:hover {
     text-decoration: none;
     color: #880E4F;
 }
-.loisirs ul{
+
+.loisirs ul {
     display: flex;
     height: 100%;
-    margin: 10%; 
+    margin: 10%;
 
 }
-.loisirs li{
+
+.loisirs li {
     margin: auto;
 }
-.circle-icon{
+
+.circle-icon {
     border-radius: 50%;
     border: solid #404040 2px;
     width: 60px;
@@ -111,205 +135,269 @@ aside{
     padding: 10px;
     text-align: center;
 }
-.formation{
+
+.formation {
     padding-top: 25px;
     grid-area: formation;
-  
+
 }
-.experience{
+
+.experience {
     padding-top: 40px;
     grid-area: exp;
 }
-header, .formation, .experience, footer{
+
+header,
+.formation,
+.experience,
+footer {
     margin-left: 8%;
 }
-.TitreDroite{
+
+.TitreDroite {
     display: flex;
     color: black;
-    border-bottom:#880E4F solid 2px;
+    border-bottom: #880E4F solid 2px;
     max-width: 680px;
     padding-bottom: 5px;
     align-items: flex-end;
     text-transform: uppercase;
 }
-.TitreDroite h2, .formation h3, .experience h3{
+
+.TitreDroite h2,
+.formation h3,
+.experience h3 {
     font-weight: 700;
     margin: 0;
 }
-.formation ul, .experience ul {
+
+.formation ul,
+.experience ul {
     display: flex;
     margin-top: 50px;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
-li .h5{
+
+li .h5 {
     margin-bottom: 2%;
 }
-[id*=ico]{
+
+[id*=ico] {
     margin-right: 25px;
 }
-.detail{
+
+.detail {
     flex: 0.1 2 300px;
     margin-left: 8%;
 }
-.dateVille{
+
+.dateVille {
     font-weight: 700;
     flex: 0 1 100px;
 }
-.formation li p, .experience li p{
+
+.formation li p,
+.experience li p {
     margin-bottom: 10px;
 }
-.formation li i, .experience li i {
+
+.formation li i,
+.experience li i {
     margin-right: 15px;
     padding-top: 8px;
 }
-#citations{
+
+#citations {
     display: flex;
     max-width: 680px;
     flex-wrap: wrap;
 }
-blockquote{
+
+blockquote {
     margin-top: 5%;
     margin-right: 5%;
     flex: 1;
     align-items: center;
 }
-footer{
+
+footer {
     grid-area: reco;
 }
-.contact{
+
+.contact {
     grid-area: contact;
 }
-.propos{
+
+.propos {
     grid-area: propos;
 }
-.loisirs{
+
+.loisirs {
     grid-area: loisirs;
 }
-@media all and (max-width:992px){
-    main{ 
+
+@media all and (max-width:992px) {
+    main {
         margin: auto;
-        grid-template-rows: 14% 2fr 4fr 1fr;;
+        grid-template-rows: 14% 2fr 4fr 1fr;
+        ;
         grid-template-areas: "pres pres"
-                            "contact formation"
-                            "propos exp"
-                            "loisirs reco"
-                                ;
-         }  
-    header{
+            "contact formation"
+            "propos exp"
+            "loisirs reco"
+        ;
+    }
+
+    header {
         margin: auto;
-        position: relative; 
-        padding: 0;  
-    }   
-    #line{
+        position: relative;
+        padding: 0;
+    }
+
+    #line {
         position: absolute;
         right: 0;
         bottom: 0;
-    }  
-    header h2{
-         text-align: right;
-     }
-    .propos, .contact, .loisirs{
-         min-width: 220px;
-         width: auto;
     }
-    .loisirs ul{
-        padding-bottom: 20%; 
+
+    header h2 {
+        text-align: right;
+    }
+
+    .propos,
+    .contact,
+    .loisirs {
+        min-width: 220px;
+        width: auto;
+    }
+
+    .loisirs ul {
+        padding-bottom: 20%;
         margin: 0;
     }
-    .formation, .experience, footer{
+
+    .formation,
+    .experience,
+    footer {
         padding-right: 5%;
         margin-bottom: 0;
     }
-    .TitreDroite{
+
+    .TitreDroite {
         min-width: 350px;
     }
-    .photo{
+
+    .photo {
         display: none;
         visibility: hidden;
     }
-    .loisirs h2{
+
+    .loisirs h2 {
         margin-bottom: 10%;
     }
-    blockquote, .blockquote-footer{
-        flex: 1; 
+
+    blockquote,
+    .blockquote-footer {
+        flex: 1;
         margin-bottom: 0;
-        padding-bottom: 0;    
+        padding-bottom: 0;
     }
 }
-@media all and (max-width:576px){
-    main{
+
+@media all and (max-width:576px) {
+    main {
         width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,1fr) 2fr 4fr repeat(4,1fr);
+        grid-template-rows: repeat(2, 1fr) 2fr 4fr repeat(4, 1fr);
         grid-template-areas: "photo"
-                             "pres"
-                              "formation"
-                              "exp"
-                              "reco"
-                              "propos"
-                              "loisirs"
-                              "contact"
-                              ;
+            "pres"
+            "formation"
+            "exp"
+            "reco"
+            "propos"
+            "loisirs"
+            "contact"
+        ;
     }
-    .formation, .experience, footer{
+
+    .formation,
+    .experience,
+    footer {
         padding: 4%;
         margin: 0;
         width: 100vw;
     }
-    header{
+
+    header {
         margin: 0;
         padding: 8% 2% 8% 5%;
     }
-    #line{
+
+    #line {
         position: relative;
         width: 60px;
     }
-    .display-4{
+
+    .display-4 {
         font-size: 2.4rem;
-    } 
-    header h2{
+    }
+
+    header h2 {
         text-align: left;
     }
-    .propos, .loisirs, .contact, .photo{
-        width: 100vw; 
+
+    .propos,
+    .loisirs,
+    .contact,
+    .photo {
+        width: 100vw;
     }
-    .contact ul{
+
+    .contact ul {
         margin: auto;
         text-align: center;
         padding-bottom: 5%;
     }
-    .photo{
+
+    .photo {
         visibility: visible;
         padding: 5%;
         display: flex;
     }
-    .loisirs ul{
+
+    .loisirs ul {
         margin: 0;
         padding: 8%;
     }
-    blockquote{
+
+    blockquote {
         flex: auto;
-        margin : auto;
+        margin: auto;
     }
-    li .h5, .mb-0{
+
+    li .h5,
+    .mb-0 {
         font-size: 1.1rem;
         margin-bottom: 2%;
     }
-    .h4{
+
+    .h4 {
         font-size: 1.35rem;
         margin-bottom: 2%;
     }
-    .loisirs h2{
+
+    .loisirs h2 {
         margin-bottom: 0;
     }
-    #citations{
+
+    #citations {
         margin: 0;
         padding: 5% 0 0 10%;
         justify-content: center;
-    } 
-    .blockquote-footer{
+    }
+
+    .blockquote-footer {
         margin-bottom: 1rem;
     }
 }
-
