@@ -47,10 +47,13 @@ h2{
     grid-area: photo;
     visibility: visible;
 }
-img{
-    margin: auto; 
-    max-width: 200px;   
+.photo a{
+    display: block;
+    margin: auto;
 }
+img{
+    max-width: 200px;  
+} 
 aside{
     display: contents;
 }
@@ -80,14 +83,14 @@ aside{
 #blocContact{
     padding: 5% 10% 5% 10%;
 }
-a{
+.contact a{
     display: block;
     text-decoration: none;
     color: #404040;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-a:hover{
+.contact a:hover{
     text-decoration: none;
     color: #880E4F;
 }
