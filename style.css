@@ -40,6 +40,7 @@ span,
 h1 {
     color: black;
     width: fit-content;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -89,6 +90,7 @@ aside {
     padding-top: 10px;
     padding-bottom: 5px;
     font-weight: 700;
+    text-transform: uppercase;
 
 }
 
@@ -161,7 +163,6 @@ footer {
     max-width: 680px;
     padding-bottom: 5px;
     align-items: flex-end;
-    text-transform: uppercase;
 }
 
 .TitreDroite h2,
@@ -169,6 +170,7 @@ footer {
 .experience h3 {
     font-weight: 700;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .formation ul,
