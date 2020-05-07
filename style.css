@@ -17,9 +17,9 @@ main{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 19% 2fr 4fr 1fr;
     grid-template-areas: "photo pres"
-                        "contact formation"
-                        "propos exp"
-                       "loisirs reco";                             
+                         "contact formation"
+                         "propos exp"
+                         "loisirs reco";                             
 }
 header{
     margin: auto;
@@ -77,12 +77,8 @@ aside{
     padding: 5% 10% 5% 10%;
     text-align: justify;
 }
-.contact ul{
-    flex: auto;
+#blocContact{
     padding: 5% 10% 5% 10%;
-}
-.contact li{
-   margin-bottom: 15px;
 }
 a{
     display: block;
@@ -133,7 +129,7 @@ header, .formation, .experience, footer{
     align-items: flex-end;
     text-transform: uppercase;
 }
-.TitreDroite h3, .formation h4, .experience h4{
+.TitreDroite h2, .formation h3, .experience h3{
     font-weight: 700;
     margin: 0;
 }
@@ -165,12 +161,8 @@ li .h5{
 }
 #citations{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     max-width: 680px;
-    align-items: baseline;
-    align-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 blockquote{
     margin-top: 5%;
@@ -210,7 +202,7 @@ footer{
         right: 0;
         bottom: 0;
     }  
-     h2{
+    header h2{
          text-align: right;
      }
     .propos, .contact, .loisirs{
@@ -232,14 +224,11 @@ footer{
         display: none;
         visibility: hidden;
     }
-    .loisirs h3{
+    .loisirs h2{
         margin-bottom: 10%;
     }
-    #citations{
-        flex-wrap: wrap;
-    }
     blockquote, .blockquote-footer{
-        flex: auto; 
+        flex: 1; 
         margin-bottom: 0;
         padding-bottom: 0;    
     }
@@ -276,7 +265,7 @@ footer{
     .display-4{
         font-size: 2.4rem;
     } 
-    h2{
+    header h2{
         text-align: left;
     }
     .propos, .loisirs, .contact, .photo{
@@ -285,9 +274,7 @@ footer{
     .contact ul{
         margin: auto;
         text-align: center;
-    }
-    .contact li{
-       margin-bottom: 15px;
+        padding-bottom: 5%;
     }
     .photo{
         visibility: visible;
@@ -299,6 +286,7 @@ footer{
         padding: 8%;
     }
     blockquote{
+        flex: auto;
         margin : auto;
     }
     li .h5, .mb-0{
@@ -309,20 +297,14 @@ footer{
         font-size: 1.35rem;
         margin-bottom: 2%;
     }
-    .loisirs h3{
+    .loisirs h2{
         margin-bottom: 0;
     }
     #citations{
         margin: 0;
-        flex-wrap: wrap;
-        padding: 5% 0 0 5%;
-    }
-    blockquote{
-        flex: auto;
-    }
-    blockquote:nth-child(1){
-        flex-grow: 2;
-    }
+        padding: 5% 0 0 10%;
+        justify-content: center;
+    } 
     .blockquote-footer{
         margin-bottom: 1rem;
     }
