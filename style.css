@@ -107,11 +107,15 @@ aside {
     color: #404040;
     text-overflow: ellipsis;
     overflow: hidden;
+    transform: scale(1);
+    transition: transform 300ms;
+ 
 }
 
 .contact a:hover {
     text-decoration: none;
     color: #880E4F;
+    transform: scale(1.05);
 }
 
 .loisirs ul {
