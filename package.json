@@ -1,0 +1,19 @@
+{
+  "name": "projet-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prefix": "postcss style.css --use autoprefixer -d ./prefixed/" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrothen/CV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrothen/CV/issues"
+  },
+  "homepage": "https://github.com/alexrothen/CV#readme",
+  "browserslist": "last 4 versions"
+}

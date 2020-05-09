@@ -39,6 +39,8 @@ span,
 
 h1 {
     color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     text-transform: uppercase;
 }
@@ -108,7 +110,7 @@ aside {
     text-overflow: ellipsis;
     overflow: hidden;
     transform: scale(1);
-    transition: transform 300ms;
+    transition: transform 450ms, font-weight 300ms;
  
 }
 
@@ -116,6 +118,7 @@ aside {
     text-decoration: none;
     color: #880E4F;
     transform: scale(1.05);
+    font-weight: 700;
 }
 
 .loisirs ul {
