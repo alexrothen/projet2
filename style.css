@@ -262,12 +262,34 @@ footer {
 
     #line {
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
+        animation: line 300ms 3.5s cubic-bezier(1,.02,.56,.01) forwards;
+    }
+    @keyframes dev {
+        0%{
+            transform: translateX(0);    
+        }
+      
+        100%{
+            transform: translateX(400px);
+        }   
+    }
+    @keyframes line {
+        0%{
+            transform: translateX(0);
+        }
+        10%{
+            transform: scaleX(0.6);
+        }
+        100%{
+            transform: translateX(510px);
+        }   
     }
 
     header h2 {
-        text-align: right;
+        text-align: left;
+        animation: dev 1.5s 300ms cubic-bezier(.96,.01,.48,.94) forwards;
     }
 
     .propos,
@@ -343,6 +365,9 @@ footer {
     #line {
         position: relative;
         width: 60px;
+        left: 0;
+        bottom: 0;
+        animation: line paused;
     }
 
     .display-4 {
@@ -351,6 +376,8 @@ footer {
 
     header h2 {
         text-align: left;
+        animation: dev paused;
+
     }
 
     .propos,
