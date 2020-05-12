@@ -264,7 +264,7 @@ footer {
         position: absolute;
         left: 0;
         bottom: 0;
-        animation: line 300ms 3.5s cubic-bezier(1,.02,.56,.01) forwards;
+        animation: line 500ms 3s cubic-bezier(1,.02,.56,.01) forwards;
     }
     @keyframes dev {
         0%{
@@ -277,19 +277,22 @@ footer {
     }
     @keyframes line {
         0%{
-            transform: translateX(0);
+            transform: translateX(0) scale(1,1);
+            transform-origin: left;
         }
-        10%{
-            transform: scaleX(0.6);
+        0%{
+            transform: translateX(-10px) scale(0.3, 2);
+            transform-origin: left;
+            border-radius: 100%;
         }
         100%{
-            transform: translateX(510px);
+            transform: translateX(510px) scaleX(1);
         }   
     }
 
     header h2 {
         text-align: left;
-        animation: dev 1.5s 300ms cubic-bezier(.96,.01,.48,.94) forwards;
+        animation: dev 1000ms 300ms cubic-bezier(.53,.01,.34,1.11) forwards;
     }
 
     .propos,
