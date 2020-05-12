@@ -67,6 +67,7 @@ img {
 
 aside {
     display: contents;
+
 }
 
 .propos,
@@ -75,7 +76,7 @@ aside {
 .photo {
     display: flex;
     flex-direction: column;
-    background-color: #E0E0E0;
+    background: #E0E0E0;
     width: 380px;
 
 }
@@ -110,14 +111,14 @@ aside {
     text-overflow: ellipsis;
     overflow: hidden;
     transform: scale(1);
-    transition: transform 450ms, font-weight 300ms;
+    transition: transform 300ms cubic-bezier(.57,.25,.87,.27), font-weight 200ms 100ms cubic-bezier(.57,.25,.87,.27);
  
 }
 
 .contact a:hover {
     text-decoration: none;
     color: #880E4F;
-    transform: scale(1.05);
+    transform: scaleX(1.05);
     font-weight: 700;
 }
 
