@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prefix": "postcss style.css --use autoprefixer -d ./prefixed/" },
+    "prefix": "postcss style.css --use autoprefixer -d ./prefixed/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexrothen/CV.git"
@@ -15,5 +16,8 @@
     "url": "https://github.com/alexrothen/CV/issues"
   },
   "homepage": "https://github.com/alexrothen/CV#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^9.7.6"
+  }
 }
