@@ -18,6 +18,9 @@
   "homepage": "https://github.com/alexrothen/CV#readme",
   "browserslist": "last 4 versions",
   "dependencies": {
-    "autoprefixer": "^9.7.6"
+    "autoprefixer": "^9.7.6",
+    "postcss": "^7.0.30",
+    "postcss-cli": "^7.1.1",
+    "postcss-grid": "^2.0.0"
   }
 }

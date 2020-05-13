@@ -270,11 +270,11 @@ footer {
         0%{
             transform: translateX(0);    
         }
-      
-        100%{
+       100%{
             transform: translateX(400px);
-        }   
+
     }
+}
     @keyframes line {
         0%{
             transform: translateX(0) scale(1,1);
@@ -292,7 +292,7 @@ footer {
 
     header h2 {
         text-align: left;
-        animation: dev 1000ms 300ms cubic-bezier(.53,.01,.34,1.11) forwards;
+        animation: dev 800ms 300ms cubic-bezier(.69,.01,.22,1.01) forwards;
     }
 
     .propos,
