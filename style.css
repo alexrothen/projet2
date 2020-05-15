@@ -264,7 +264,7 @@ footer {
         position: absolute;
         left: 0;
         bottom: 0;
-        animation: line 500ms 3s cubic-bezier(1,.02,.56,.01) forwards;
+        animation: line 500ms 2s cubic-bezier(1,.02,.56,.01) forwards;
     }
     @keyframes dev {
         0%{
@@ -280,7 +280,7 @@ footer {
             transform: translateX(0) scale(1,1);
             transform-origin: left;
         }
-        0%{
+        10%{
             transform: translateX(-10px) scale(0.3, 2);
             transform-origin: left;
             border-radius: 100%;
