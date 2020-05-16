@@ -16,7 +16,7 @@ main {
     font-weight: 300;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 19% 2fr 4fr 1fr;
+    grid-template-rows: 1.5fr 2fr 4fr 1fr;
     grid-template-areas: "photo pres"
         "contact formation"
         "propos exp"
@@ -39,7 +39,7 @@ span,
 
 h1 {
     color: black;
-    width: fit-content;
+    width: auto;
     text-transform: uppercase;
 }
 
@@ -110,7 +110,7 @@ aside {
     overflow: hidden;
     transform: scale(1);
     transition: font-weight 100ms, transform 150ms 50ms ease-out;
- 
+
 }
 
 .contact a:hover {
@@ -240,11 +240,10 @@ footer {
     grid-area: loisirs;
 }
 
-@media all and (max-width:992px) {
+@media (max-width:992px) {
     main {
         margin: auto;
-        grid-template-rows: 14% 2fr 4fr 1fr;
-        ;
+        grid-template-rows: 1fr 2fr 4fr 1fr;
         grid-template-areas: "pres pres"
             "contact formation"
             "propos exp"
@@ -262,35 +261,40 @@ footer {
         position: absolute;
         left: 0;
         bottom: 0;
-        animation: line 500ms 2s cubic-bezier(1,.02,.56,.01) forwards;
+        animation: line 500ms 2s cubic-bezier(1, .02, .56, .01) forwards;
     }
+
     @keyframes dev {
-        0%{
-            transform: translateX(0);    
+        0% {
+            transform: translateX(0);
         }
-       100%{
+
+        100% {
             transform: translateX(400px);
 
+        }
     }
-}
+
     @keyframes line {
-        0%{
-            transform: translateX(0) scale(1,1);
+        0% {
+            transform: translateX(0) scale(1, 1);
             transform-origin: left;
         }
-        10%{
+
+        10% {
             transform: translateX(-10px) scale(0.3, 2);
             transform-origin: left;
             border-radius: 100%;
         }
-        100%{
+
+        100% {
             transform: translateX(510px) scaleX(1);
-        }   
+        }
     }
 
     header h2 {
         text-align: left;
-        animation: dev 800ms 300ms cubic-bezier(.69,.01,.22,1.01) forwards;
+        animation: dev 800ms 300ms cubic-bezier(.69, .01, .22, 1.01) forwards;
     }
 
     .propos,
@@ -333,7 +337,7 @@ footer {
     }
 }
 
-@media all and (max-width:576px) {
+@media (max-width:576px) {
     main {
         width: 100vw;
         height: 100vh;
