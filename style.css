@@ -240,7 +240,7 @@ footer {
     grid-area: loisirs;
 }
 
-@media (max-width:992px) {
+@media all and (max-width:992px) {
     main {
         margin: auto;
         grid-template-rows: 1fr 2fr 4fr 1fr;
@@ -337,10 +337,12 @@ footer {
     }
 }
 
-@media (max-width:576px) {
+@media all and (max-width:576px) {
     main {
         width: 100vw;
         height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr) 2fr 4fr repeat(4, 1fr);
         grid-template-areas: "photo"
