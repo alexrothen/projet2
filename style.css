@@ -39,8 +39,6 @@ span,
 
 h1 {
     color: black;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     text-transform: uppercase;
 }
