@@ -241,7 +241,7 @@ footer {
 }
 
 @media all and (max-width:992px) {
-    main {
+    .blocGrid {
         margin: auto;
         grid-template-rows: 1fr 2fr 4fr 1fr;
         grid-template-areas: "pres pres"
@@ -338,7 +338,7 @@ footer {
 }
 
 @media all and (max-width:576px) {
-    main {
+    .blocGrid {
         width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
