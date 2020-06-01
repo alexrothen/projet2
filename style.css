@@ -63,7 +63,7 @@ img {
     max-width: 200px;
 }
 
-aside, main {
+aside {
     display: contents;
 
 }
