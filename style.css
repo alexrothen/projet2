@@ -7,7 +7,7 @@ body {
     background-color: #FAFAFA;
 }
 
-main {
+.blocGrid {
     font-size: 1rem;
     margin: auto;
     overflow-x: hidden;
@@ -63,7 +63,7 @@ img {
     max-width: 200px;
 }
 
-aside {
+aside, main {
     display: contents;
 
 }
@@ -341,8 +341,6 @@ footer {
     main {
         width: 100vw;
         height: 100vh;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr) 2fr 4fr repeat(4, 1fr);
         grid-template-areas: "photo"
