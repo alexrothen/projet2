@@ -10,7 +10,6 @@ body {
 .blocGrid {
     font-size: 1rem;
     margin: auto;
-    overflow-x: hidden;
     color: #263238;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -63,7 +62,8 @@ img {
     max-width: 200px;
 }
 
-aside {
+aside,
+main {
     display: contents;
 
 }
@@ -240,7 +240,7 @@ footer {
     grid-area: loisirs;
 }
 
-@media all and (max-width:992px) {
+@media screen and (max-width:992px) {
     .blocGrid {
         margin: auto;
         grid-template-rows: 1fr 2fr 4fr 1fr;
@@ -262,34 +262,6 @@ footer {
         left: 0;
         bottom: 0;
         animation: line 500ms 2s cubic-bezier(1, .02, .56, .01) forwards;
-    }
-
-    @keyframes dev {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(400px);
-
-        }
-    }
-
-    @keyframes line {
-        0% {
-            transform: translateX(0) scale(1, 1);
-            transform-origin: left;
-        }
-
-        10% {
-            transform: translateX(-10px) scale(0.3, 2);
-            transform-origin: left;
-            border-radius: 100%;
-        }
-
-        100% {
-            transform: translateX(510px) scaleX(1);
-        }
     }
 
     header h2 {
@@ -337,7 +309,7 @@ footer {
     }
 }
 
-@media all and (max-width:576px) {
+@media screen and (max-width:576px) {
     .blocGrid {
         width: 100vw;
         height: 100vh;
@@ -437,5 +409,32 @@ footer {
 
     .blockquote-footer {
         margin-bottom: 1rem;
+    }
+}
+@keyframes dev {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(400px);
+
+    }
+}
+
+@keyframes line {
+    0% {
+        transform: translateX(0) scale(1, 1);
+        transform-origin: left;
+    }
+
+    10% {
+        transform: translateX(-10px) scale(0.3, 2);
+        transform-origin: left;
+        border-radius: 100%;
+    }
+
+    100% {
+        transform: translateX(510px) scaleX(1);
     }
 }
