@@ -174,11 +174,12 @@ footer {
     margin: 0;
     text-transform: uppercase;
 }
-.titreDroite li:nth-child(1){
+
+.titreDroite li:nth-child(1) {
     width: 60px;
 }
 
-.contenu{
+.contenu {
     display: flex;
     margin-top: 50px;
     align-items: flex-start;
@@ -313,7 +314,6 @@ footer {
 
 @media screen and (max-width:576px) {
     .blocGrid {
-        width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr) 2fr 4fr repeat(4, 1fr);
@@ -357,6 +357,13 @@ footer {
         text-align: left;
         animation: dev paused;
 
+    }
+
+    .propos,
+    .loisirs,
+    .contact,
+    .photo {
+        width: 100vw;
     }
 
     .contact ul {
@@ -406,6 +413,7 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
 @keyframes dev {
     0% {
         transform: translateX(0);
