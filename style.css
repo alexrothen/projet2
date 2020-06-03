@@ -359,13 +359,6 @@ footer {
 
     }
 
-    .propos,
-    .loisirs,
-    .contact,
-    .photo {
-        width: 100vw;
-    }
-
     .contact ul {
         margin: auto;
         text-align: center;
