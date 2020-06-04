@@ -56,6 +56,12 @@ h2 {
     grid-area: photo;
     visibility: visible;
 }
+.loisirs i {
+    color: #263238;
+}
+.formation i, .experience i, footer i {
+    color: #880E4F;
+}
 
 img {
     margin: auto;
@@ -245,6 +251,7 @@ footer {
 
 @media screen and (max-width:992px) {
     .blocGrid {
+        width: 100vw;
         margin: auto;
         grid-template-rows: 1fr 2fr 4fr 1fr;
         grid-template-areas: "pres pres"
@@ -252,6 +259,9 @@ footer {
             "propos exp"
             "loisirs reco"
         ;
+    }
+    .titreDroite {
+        min-width: 0;
     }
 
     header {
@@ -262,14 +272,12 @@ footer {
 
     #line {
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: 0;
-        animation: line 500ms 2s cubic-bezier(1, .02, .56, .01) forwards;
     }
 
     header h2 {
-        text-align: left;
-        animation: dev 800ms 300ms cubic-bezier(.69, .01, .22, 1.01) forwards;
+        text-align: right;
     }
 
     .propos,
@@ -314,6 +322,7 @@ footer {
 
 @media screen and (max-width:576px) {
     .blocGrid {
+        width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr) 2fr 4fr repeat(4, 1fr);
@@ -346,7 +355,6 @@ footer {
         width: 60px;
         left: 0;
         bottom: 0;
-        animation: line paused;
     }
 
     .display-4 {
@@ -355,13 +363,12 @@ footer {
 
     header h2 {
         text-align: left;
-        animation: dev paused;
 
     }
+    .titreDroite {
+        min-width: 0;
+    }
 
-    .propos,
-    .loisirs,
-    .contact,
     .photo {
         width: 100vw;
     }
@@ -411,33 +418,5 @@ footer {
 
     .blockquote-footer {
         margin-bottom: 1rem;
-    }
-}
-
-@keyframes dev {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(400px);
-
-    }
-}
-
-@keyframes line {
-    0% {
-        transform: translateX(0) scale(1, 1);
-        transform-origin: left;
-    }
-
-    10% {
-        transform: translateX(-10px) scale(0.3, 2);
-        transform-origin: left;
-        border-radius: 100%;
-    }
-
-    100% {
-        transform: translateX(510px) scaleX(1);
     }
 }
