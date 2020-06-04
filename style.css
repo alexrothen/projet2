@@ -358,8 +358,9 @@ footer {
         bottom: 0;
     }
 
-    .display-4 {
+    .display-4, .h5 {
         font-size: 2.2rem;
+        word-wrap: break-word;
     }
 
     header h2 {
@@ -397,11 +398,13 @@ footer {
     }
 
     li .h5,
-    .mb-0 {
-        font-size: 1.1rem;
+    .mb-0, .dateVille {
+        font-size: 1rem;
         margin-bottom: 2%;
     }
-
+    .detail{
+        margin-left: 4%;
+    }
     .h4 {
         font-size: 1.2rem;
         margin-bottom: 2%;
